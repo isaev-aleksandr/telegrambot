@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="1" author="isaev">
+        <createTable tableName="books">
+            <column name="id" type="smallint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"></constraints>
+            </column>
+            <column name="book_name" type="varchar(50)"></column>
+            <column name="genre" type="varchar(50)"></column>
+            <column name="author" type="varchar(50)"></column>
+            <column name="publication" type="smallint"></column>
+            <column name="count_pages" type="smallint"></column>
+            <column name="price" type="smallint"></column>
+        </createTable>
+        <rollback>
+            <dropTable tableName="books"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet id="2" author="isaev">
+        <insert tableName="books">
+            <column name="book_name" value="Архимаг"></column>
+            <column name="genre" value="фэнтези"></column>
+            <column name="author" value="Роберт Энтони Сальваторе"></column>
+            <column name="publication" value="2014"></column>
+            <column name="count_pages" value="712"></column>
+            <column name="price" value="860"></column>
+        </insert>
+
+        <insert tableName="books">
+            <column name="book_name" value="Крестный отец"></column>
+            <column name="genre" value="драма"></column>
+            <column name="author" value="Марио Пьюзо"></column>
+            <column name="publication" value="1969"></column>
+            <column name="count_pages" value="852"></column>
+            <column name="price" value="920"></column>
+        </insert>
+
+        <insert tableName="books">
+            <column name="book_name" value="Дезертир"></column>
+            <column name="genre" value="фантастика"></column>
+            <column name="author" value="Алексей Степанов"></column>
+            <column name="publication" value="2009"></column>
+            <column name="count_pages" value="621"></column>
+            <column name="price" value="755"></column>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

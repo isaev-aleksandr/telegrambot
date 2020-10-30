@@ -64,7 +64,7 @@
 					<assembleDirectory>target</assembleDirectory>
 					<programs>
 						<program>
-							<mainClass>ru.isaev.telegrambot</mainClass>
+							<mainClass>ru.isaev.telegrambot.App</mainClass>
 							<name>workerBot</name>
 						</program>
 					</programs>

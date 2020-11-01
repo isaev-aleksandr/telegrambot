@@ -65,7 +65,7 @@
 					<programs>
 						<program>
 							<mainClass>ru.isaev.telegrambot.App</mainClass>
-							<name>workerBot</name>
+							<name>telegrambot</name>
 						</program>
 					</programs>
 				</configuration>

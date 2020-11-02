@@ -1,1 +1,1 @@
-Procfile : worker: java -jar target/*.jar
+worker: java -jar target/*.jar

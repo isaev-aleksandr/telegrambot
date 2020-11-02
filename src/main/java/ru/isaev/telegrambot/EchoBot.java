@@ -29,7 +29,7 @@ public class EchoBot extends TelegramLongPollingBot {
     @Override
     public String getBotToken() {
 
-        return "1389157501:AAHFApdxCM45xnwzGpW6bk9H-IGrMb8h2ZA";
+        return "1253629805:AAFtTxvZathmMhArQJaIVznGyvyeld91KB8";
     }
 
     /**
@@ -309,6 +309,6 @@ public class EchoBot extends TelegramLongPollingBot {
      */
     @Override
     public String getBotUsername() {
-        return "RemindersForYourLovedOnesBot";
+        return "RemindersForFriendsBot";
     }
 }

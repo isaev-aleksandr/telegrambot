@@ -193,7 +193,7 @@ public class EchoBot extends TelegramLongPollingBot {
                                                                 " на " + rem.getRemindDate().getDayOfMonth() +
                                                                 "." + rem.getRemindDate().getMonthValue() +
                                                                 " в " + rem.getRemindTime().getHour() + ":" +
-                                                                rem.getRemindTime().getMinute() + " установлено. " + rem.toString()
+                                                                rem.getRemindTime().getMinute() + " установлено. "
                                                 );
                                                 buttons.createDeleteButtons(outMessage);
                                                 execute(outMessage);
